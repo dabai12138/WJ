@@ -1,4 +1,5 @@
 由于配置分布式执行脚本，执行脚本之前，需要配置环境：
+部署JAVA、Python环境
 下载 selenium-server-standalone-3.141.59.jar  
 下载谷歌驱动和火狐驱动，放入python根目录下
 
