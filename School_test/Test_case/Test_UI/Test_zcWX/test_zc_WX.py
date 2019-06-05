@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from common import config,ele_act
-from wj_data import page_ele as PE
+from WX_data import page_ele as PE
 from common.modul import login
 import time
 import unittest

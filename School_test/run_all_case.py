@@ -4,7 +4,7 @@
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from WJ_package.HTMLTestRunner import HTMLTestRunner
+from Tools import HTMLTestRunner
 from multiprocessing import Process,Manager,Value,Lock,Pipe,Queue
 import multiprocessing
 from threading import Thread
@@ -40,7 +40,7 @@ def run_case(suite,reportName="report"):
     fp = open(result_path,"wb")
     mu = []
     for i in suite:
-        runner = HTMLTestRunner(stream=fp,
+        runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
                                 title=u"自动化测试报告",
                                 description=u"用例执行情况：")
         m = Thread(target=runner.run,args=(i,))
@@ -91,7 +91,6 @@ if __name__ == "__main__":
         discover.append(i)
     for j in stucase:
         discover.append(j)
-    print(discover)
     run_case(discover)
 
     #发送邮件

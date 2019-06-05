@@ -8,7 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from time import time,sleep,ctime
 from common import config,ele_act
-from wj_data import page_ele as PE
+from WX_data import page_ele as PE
 from common.modul import *
 from multiprocessing import Process
 import traceback
@@ -17,13 +17,17 @@ import sys,os
 # sys.path.append(os.path.join(b,"ALL_driver"))
 import unittest
 import pymssql
+import logging
 
 
 
 class Test_sj_ad(unittest.TestCase):
     """试卷管理页用例"""
     def setUp(self):
-        self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
+        try:
+            self.driver = cdriver(self,PE.lists[0])
+        except:
+            self.driver = webdriver.Chrome()
         self.P = ele_act.Page(self.driver)
         self.Wait = ele_act.Page(self.driver)
         self.verificationErrors = []

@@ -17,7 +17,7 @@ class Page(object):
     """页面方法"""
     def __init__(self,driver):
         self.driver = driver
-    def ele_(self,ele,addr):
+    def __ele(self,ele,addr):
         #定位元素
         if ele == "ID":
             return self.driver.find_element(By.ID,addr)
@@ -56,20 +56,25 @@ class Page(object):
 
     def act(self,ele,addr,txt=None,s=0):
         if s == 0:
-            return self.ele_(ele,addr).send_keys(txt)
+            return self.__ele(ele,addr).send_keys(txt)
         elif s == 1:
-            return self.ele_(ele,addr).click()
+            return self.__ele(ele,addr).click()
         elif s == 2:
-            return self.ele_(ele,addr).clear()
+            return self.__ele(ele,addr).clear()
         elif s == 3:
-            return self.ele_(ele,addr).get_attribute(txt)
+            return self.__ele(ele,addr).get_attribute(txt)
         elif s == 4:
-            text = self.ele_(ele,addr).text
+            text = self.__ele(ele,addr).text
             return text
 
     def max_(self):
         try:
             self.driver.maximize_window()
+        except Exception as e:
+            raise e
+    def refresh(self):
+        try:
+            self.driver.refresh()
         except Exception as e:
             raise e
     def talert(self):
@@ -103,7 +108,7 @@ class Page(object):
                 self.driver.switch_to_window(h)
     def frame_(self,ele,addr):
         try:
-            frame = self.ele_(ele,addr)
+            frame = self.__ele(ele,addr)
             self.driver.switch_to_frame(frame)
         except Exception as e:
             raise e
@@ -124,7 +129,7 @@ class Page(object):
         return self.driver.current_url()
     def AC(self,ele,addr,ele_=None,addr_=None,s=0):
         ac = ActionChains(self.driver)
-        m = self.ele_(ele, addr)
+        m = self.__ele(ele, addr)
         if s == 0:
             return ac.move_to_element(m).perform()
         elif s == 1:
@@ -134,14 +139,14 @@ class Page(object):
         elif s == 3:
             return ac.double_click(m).perform()
         elif s == 4:
-            n = self.ele_(self,ele_.addr_)
+            n = self.__ele(self,ele_.addr_)
             return ac.drag_and_drop(m,n).perform()
     def screen_(self):
         #获取截图
         path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         dirPath = createDir(path,"screen")
         os.chdir(dirPath)
-        now = time.strftime("%Y-%m-%d_%H:%M:%S",time.localtime(time.time()))
+        now = time.strftime("%Y-%m-%d_%H_%M_%S",time.localtime(time.time()))
         try:
             self.driver.get_screenshot_as_file(dirPath+"\\"+now+r".png")
         except Exception as e:
@@ -149,7 +154,7 @@ class Page(object):
     def get_ele_to_see(self,ele,addr):
         #把元素拉到可见位置
         try:
-            target = self.ele_(ele,addr)
+            target = self.__ele(ele,addr)
             self.driver.execute_script("arguments[0].scrolllntoView();",target)
         except Exception as e:
             raise e

@@ -23,15 +23,14 @@ class SQL_conn(object):
         List = []
         for i in row:
             List.append(i)
-        print(List)
         return List
     def sql_close(self):
         self.cursor.close()
         self.conn.close()
+
 if __name__ == "__main__":
     sql = "select * from city"
     S = SQL_conn(sql)
     S.sql_conn()
-    S.sql_search()
+    t = S.sql_search()
     S.sql_close()
-

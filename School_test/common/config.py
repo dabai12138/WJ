@@ -57,5 +57,6 @@ sql_server = "101.71.142.95"
 sql_user = "root"
 sql_pwd = "Svnlan!#%852"
 test_db = "video_ulimit_test"
-yfb_db = ""
 port = 16033
+
+#SQL 语句

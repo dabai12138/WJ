@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from time import time,sleep,ctime
 from common.modul import *
 from common import config,ele_act
-from wj_data import page_ele as PE
+from WX_data import page_ele as PE
 from multiprocessing import Process
 import sys,os
 # b = os.path.split(os.path.split(os.path.split(os.path.dirname(os.path.abspath(__file__)))[0])[0])[0]
@@ -22,7 +22,10 @@ import pymssql
 class Test_sj_ad(unittest.TestCase):
     """试卷用例"""
     def setUp(self):
-        self.driver = cdriver(self,PE.lists[1]["host"], PE.lists[1]["browser"])
+        try:
+            self.driver = cdriver(self,PE.lists[1])
+        except:
+            self.driver = webdriver.Firefox()
         self.P = ele_act.Page(self.driver)
         self.Wait = ele_act.Page(self.driver)
         self.verificationErrors = []

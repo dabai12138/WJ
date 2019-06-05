@@ -1,0 +1,10 @@
+
+[2019-06-05 19:26:07,131-err_log-ERROR]:[Error in __main__] msg: 'int' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/WX_Log/act_log.py", line 78, in wrapper
+    fn(*args,**kwargs)
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/WX_Log/act_log.py", line 90, in tain
+    nat()
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/WX_Log/act_log.py", line 89, in nat
+    print(x.encode("utf-8"))
+AttributeError: 'int' object has no attribute 'encode'
