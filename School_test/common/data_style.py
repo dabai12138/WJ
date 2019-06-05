@@ -4,11 +4,13 @@
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from openpyxl.styles import Border,Side,Font
-import csv,os
+import csv,os,time
 
 #wj_data路径
+now = time.strftime("%Y-%m-%d_%H-%M-%S",time.localtime(time.time()))
+csv_file = now+"data.csv"
 path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-data_path = os.path.join(os.path.join(path, "wj_data"),"csv_data.csv")
+data_path = os.path.join(os.path.join(path, "wj_data"),csv_file)
 
 class Excle(object):
     """Excel文件的操作方法"""
@@ -102,5 +104,5 @@ class Csv(object):
 if __name__ == "__main__":
     c =Csv(data_path)
     # c.write_row(["first_name","last_name"],(["wang","jian"],["li","kang"],["dsad","dsad"]))
-    #c.write_col([["a","b","c","d","e"],[1,2,3,4,5]])
+    # c.write_col([["a","b","c","d","e"],[1,2,3,4,5]])
 
