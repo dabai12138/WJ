@@ -8,7 +8,6 @@ from Tools import HTMLTestRunner
 from multiprocessing import Process,Manager,Value,Lock,Pipe,Queue
 import multiprocessing
 from threading import Thread
-from tomorrow import threads
 import unittest
 import smtplib
 import sys,os
