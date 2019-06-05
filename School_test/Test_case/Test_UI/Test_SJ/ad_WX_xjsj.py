@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from time import time,sleep,ctime
 from common import config,ele_act
 from wj_data import page_ele as PE
-from common.modul import login
+from common.modul import *
 from multiprocessing import Process
 import sys,os
 # b = os.path.split(os.path.split(os.path.split(os.path.dirname(os.path.abspath(__file__)))[0])[0])[0]
@@ -22,7 +22,7 @@ import pymssql
 class Test_sj_ad(unittest.TestCase):
     """新建试卷页用例"""
     def setUp(self):
-        self.driver = ele_act.cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
+        self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
         self.P = ele_act.Page(self.driver)
         self.Wait = ele_act.Page(self.driver)
         self.Wait.wait()
@@ -36,37 +36,37 @@ class Test_sj_ad(unittest.TestCase):
         """进入试卷管理"""
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
     def test_sj_01(self):
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
     def test_sj_02(self):
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
     def test_sj_03(self):
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
     def test_sj_04(self):
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
     def test_sj_05(self):
         self.P.act(PE.ele[1],PE.sj_xpath,s=1)
         self.Wait.wait()
-        t = self.P.act(PE.ele[1],PE.xj_xpath,s=3)
+        t = self.P.act(PE.ele[1],PE.xj_xpath,s=4)
         self.assertEqual(t,"新建试卷")
 
 

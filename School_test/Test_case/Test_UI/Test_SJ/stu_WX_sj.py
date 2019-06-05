@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from time import time,sleep,ctime
-from common.modul import login
+from common.modul import *
 from common import config,ele_act
 from wj_data import page_ele as PE
 from multiprocessing import Process
@@ -22,7 +22,7 @@ import pymssql
 class Test_sj_ad(unittest.TestCase):
     """试卷用例"""
     def setUp(self):
-        self.driver = ele_act.cdriver(self,PE.lists[1]["host"], PE.lists[1]["browser"])
+        self.driver = cdriver(self,PE.lists[1]["host"], PE.lists[1]["browser"])
         self.P = ele_act.Page(self.driver)
         self.Wait = ele_act.Page(self.driver)
         self.verificationErrors = []

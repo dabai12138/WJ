@@ -26,5 +26,11 @@ ttt_xp = '//*[@id="root"]/div/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/di
 aaa_xp = '//*[@id="/school$Menu"]/li[4]/a'
 ssj_xp = '//*[@id="dsheader"]/div[13]/a'
 
+#注册网校
+zc_xp =  '/html/body/div[1]/div[1]/div[10]/a'
+zc_id = 'layui-layer1'
+zc_cn = 'istertxts'
+xy_id = 'cookietime'
+
 ele = ["ID","XPATH","CSS_SELECTOR","CLASS_NAME","NAME","TAG_NAME","LINK_TEXT"]
 lists = [{"host":"http://localhost:4444/wd/hub","browser":"chrome"},{"host":"http://192.168.0.127:5555/wd/hub","browser":"firefox"}]
