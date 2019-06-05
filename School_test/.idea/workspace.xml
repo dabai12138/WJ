@@ -23,8 +23,8 @@
       <file leaf-file-name="act_log.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WX_Log/act_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="190">
+              <caret line="73" column="14" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="14" />
               <folding>
                 <element signature="e#38#60#0" expanded="true" />
               </folding>
@@ -92,7 +92,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+    <option name="x" value="442" />
+    <option name="y" value="42" />
     <option name="width" value="1400" />
     <option name="height" value="959" />
   </component>
@@ -342,8 +343,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="0" width="1120" height="767" extended-state="0" />
-    <editor active="true" />
+    <frame x="354" y="34" width="1120" height="767" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31457564" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900944" />
@@ -607,8 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WX_Log/act_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        <state relative-caret-position="190">
+          <caret line="73" column="14" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="14" />
           <folding>
             <element signature="e#38#60#0" expanded="true" />
           </folding>
