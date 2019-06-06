@@ -1,13 +1,22 @@
-ÓÉÓÚÅäÖÃ·Ö²¼Ê½Ö´ĞĞ½Å±¾£¬Ö´ĞĞ½Å±¾Ö®Ç°£¬ĞèÒªÅäÖÃ»·¾³£º
-ÏÂÔØ selenium-server-standalone-3.141.59.jar  
-ÏÂÔØ¹È¸èÇı¶¯ºÍ»ğºüÇı¶¯£¬·ÅÈëpython¸ùÄ¿Â¼ÏÂ
+ç”±äºé…ç½®åˆ†å¸ƒå¼æ‰§è¡Œè„šæœ¬ï¼Œæ‰§è¡Œè„šæœ¬ä¹‹å‰ï¼Œéœ€è¦é…ç½®ç¯å¢ƒï¼š
+é…ç½®Javaç¯å¢ƒ
+ä¸‹è½½ selenium-server-standalone-3.141.59.jar  
+ä¸‹è½½è°·æ­Œé©±åŠ¨å’Œç«ç‹é©±åŠ¨...ï¼Œæ”¾å…¥pythonæ ¹ç›®å½•ä¸‹
 
-£¨Ö±½ÓÁ¬½ÓÎÒµÄ»òÕß×Ô¼ºÆôÓÃhub£»http://192.168.0.127:4444/grid/console£©
-ÆôÓÃhub£º´ò¿ªcmd-µ½ selenium-server-standalone-3.141.59.jar Ä¿Â¼ÏÂ£¬ÊäÈëÃüÁî£ºjava -jar selenium-server-standalone-3.141.59.jar -role hub -port 4444
-ÆôÓÃnode£ºÁí´ò¿ªcmd-µ½ selenium-server-standalone-3.141.59.jar Ä¿Â¼ÏÂ£¬ÊäÈëÃüÁî£ºjava -jar selenium-server-standalone-3.141.59.jar -role node -port 5555 -hub http://localhost:4444/gird/register                                        
-PS:node¿É½¨Á¢¶à¸ö£¬portÒª²»Í¬
+åˆ†å¸ƒå¼ç®¡ç†ï¼š
+ï¼ˆç›´æ¥è¿æ¥æˆ‘çš„æˆ–è€…è‡ªå·±å¯ç”¨hubï¼›http://localhost:4444/grid/consoleï¼‰
+å¯ç”¨hubï¼šæ‰“å¼€cmd-åˆ° selenium-server-standalone-3.141.59.jar ç›®å½•ä¸‹ï¼Œè¾“å…¥å‘½ä»¤ï¼šjava -jar selenium-server-standalone-3.141.59.jar -role hub -port 4444
+å¯ç”¨nodeï¼šæ‰“å¼€cmd-åˆ° selenium-server-standalone-3.141.59.jar ç›®å½•ä¸‹ï¼Œè¾“å…¥å‘½ä»¤ï¼šjava -jar selenium-server-standalone-3.141.59.jar -role node -port 5555 -hub http://localhost:4444/gird/register                                        
+PS:nodeå¯å»ºç«‹å¤šä¸ªï¼Œportè¦ä¸åŒ
 
-
-python ¹¦ÄÜ°üµ¼Èë  pip install package
-
-ÓÃÀıÎÄ¼şad¿ªÍ·µÄÎªadmin¶ËÓÃÀı£»stu¿ªÍ·µÄÎªÑ§Éú¶ËÓÃÀı£¬th¿ªÍ·µÄÎª½ÌÊ¦¶ËÓÃÀı
+pythonï¼š
+python åŠŸèƒ½åŒ…å¯¼å…¥  pip install package
+ç”¨ä¾‹æ–‡ä»¶adå¼€å¤´çš„ä¸ºadminç«¯ç”¨ä¾‹ï¼›stuå¼€å¤´çš„ä¸ºå­¦ç”Ÿç«¯ç”¨ä¾‹ï¼Œthå¼€å¤´çš„ä¸ºæ•™å¸ˆç«¯ç”¨ä¾‹
+commonï¼šå­˜æ”¾è‡ªå®šä¹‰çš„æ–¹æ³•å‡½æ•°
+report:å­˜æ”¾æœ€æ–°æµ‹è¯•æŠ¥å‘Š
+screen:å­˜æ”¾æˆªå›¾ç…§ç‰‡
+Test_case:å­˜æ”¾æµ‹è¯•ç”¨ä¾‹
+Tools:å·¥å…·åŒ…
+WX_data:å­˜æ”¾æ•°æ®ã€é¡µé¢å…ƒç´ ï¼ˆExcelã€Csvï¼‰
+WX_Log:å­˜æ”¾logæ—¥å¿—
+run_all_case.py:è¿è¡Œè„šæœ¬ã€ç”Ÿæˆæµ‹è¯•æŠ¥å‘Š
