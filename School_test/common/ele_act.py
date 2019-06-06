@@ -9,6 +9,8 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from common.modul import *
+import win32api
+import win32con
 import time
 
 ele = ["ID","XPATH","CSS_SELECTOR","CLASS_NAME","NAME","TAG_NAME","LINK_TEXT"]
