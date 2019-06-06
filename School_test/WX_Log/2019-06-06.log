@@ -1,0 +1,10 @@
+[2019-06-06 10:57:17,201] - act_log.py[line:42] - fuc:__console- ERROR: 
+[Error in __main__] msg: 'int' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/common/decorators.py", line 13, in wrapper
+    func(*args,**kwargs)
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/common/decorators.py", line 25, in tain
+    nat()
+  File "C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Scripts/School_test/common/decorators.py", line 24, in nat
+    print(x.encode("utf-8"))
+AttributeError: 'int' object has no attribute 'encode'

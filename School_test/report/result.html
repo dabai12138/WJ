@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.001000</p>
 <p class='attribute'><strong>Status:</strong> none</p>
 
 <p class='description'>用例执行情况：</p>
@@ -426,8 +426,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.002004</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.004987</p>
 <p class='attribute'><strong>Status:</strong> none</p>
 
 <p class='description'>用例执行情况：</p>
@@ -663,8 +663,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.002004</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.005983</p>
 <p class='attribute'><strong>Status:</strong> none</p>
 
 <p class='description'>用例执行情况：</p>
@@ -900,8 +900,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.003001</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.008996</p>
 <p class='attribute'><strong>Status:</strong> none</p>
 
 <p class='description'>用例执行情况：</p>
@@ -1137,8 +1137,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:05.331342</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:01.560037</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>用例执行情况：</p>
@@ -1194,137 +1194,23 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\stu_WX_sj.py", line 34, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281FF98&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\stu_WX_sj.py", line 34, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\stu_WX_sj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[1]["host"], PE.lists[1]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.0.127', port=5555): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281FF98&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281FF98&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\stu_WX_sj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[1]["host"], PE.lists[1]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.0.127', port=5555): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281FF98&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -1539,8 +1425,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:00.226453</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:06:07.418481</p>
 <p class='attribute'><strong>Status:</strong> Error 6</p>
 
 <p class='description'>用例执行情况：</p>
@@ -1596,137 +1482,23 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 36, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843F60&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 36, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843F60&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843F60&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843F60&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -1752,137 +1524,23 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.2: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 36, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F668&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 36, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F668&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F668&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F668&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -1908,137 +1566,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.3: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C88&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 56, in test_sj_02
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C88&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 56, in test_sj_02
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C88&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C88&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -2064,137 +1624,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.4: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843198&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 62, in test_sj_03
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843198&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 62, in test_sj_03
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843198&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843198&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -2220,137 +1682,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.5: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084470&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 68, in test_sj_04
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084470&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 68, in test_sj_04
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084470&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084470&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -2376,137 +1740,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.6: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084BE0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 74, in test_sj_05
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084BE0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 74, in test_sj_05
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084BE0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_sjgl.py", line 26, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084BE0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -2721,8 +1987,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-06-05 15:55:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:00.237521</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-06-06 10:36:42</p>
+<p class='attribute'><strong>Duration:</strong> 0:06:32.973729</p>
 <p class='attribute'><strong>Status:</strong> Error 6</p>
 
 <p class='description'>用例执行情况：</p>
@@ -2778,137 +2044,23 @@ function showOutput(id, name) {
         <pre>
         
 ft1.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 35, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 35, in setUp
+    login(self)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 24, in login
+    WebDriverWait(self.driver, 20).until(EC.title_contains("网校"))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -2934,137 +2086,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.2: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 46, in test_sj_01
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 46, in test_sj_01
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B52843EB8&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -3090,137 +2144,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.3: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084B70&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 52, in test_sj_02
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084B70&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 52, in test_sj_02
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084B70&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084B70&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -3246,137 +2202,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.4: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F550&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 58, in test_sj_03
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F550&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 58, in test_sj_03
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F550&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B5281F550&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -3402,137 +2260,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.5: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B530840F0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 64, in test_sj_04
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B530840F0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 64, in test_sj_04
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B530840F0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B530840F0&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
@@ -3558,137 +2318,39 @@ urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444
         <pre>
         
 ft1.6: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C18&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 70, in test_sj_05
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
 Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C18&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
-    raise err
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 70, in test_sj_05
+    self.P.act(PE.ele[1],PE.sj_xpath,s=1)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 61, in act
+    return self.__ele(ele,addr).click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\ele_act.py", line 25, in __ele
+    return self.driver.find_element(By.XPATH,addr)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="/school/teaching$Menu"]/li[2]/a"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.10240 x86_64)
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
-    chunked=chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
-    conn.request(method, url, **httplib_request_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
-    self.send(msg)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
-    self.connect()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
-    conn = self._new_conn()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
-    self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C18&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\Test_case\Test_UI\Test_SJ\ad_WX_xjsj.py", line 25, in setUp
-    self.driver = cdriver(self,PE.lists[0]["host"], PE.lists[0]["browser"])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\School_test\common\modul.py", line 34, in cdriver
-    "javascriptEnabled": True
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
-    return self._request(command_info[0], url, body=data)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
-    resp = http.request(method, url, body=body, headers=headers)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 72, in request
-    **urlopen_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
-    return self.urlopen(method, url, **extra_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 324, in urlopen
-    response = conn.urlopen(method, u.request_uri, **kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
-    **response_kw)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 399, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4444): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000007B53084C18&gt;: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
 
 
         </pre>
