@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b1a38a9-4966-49c3-ab27-da6936fb547a" name="Default Changelist" comment="" />
+    <list default="true" id="6b1a38a9-4966-49c3-ab27-da6936fb547a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/common/ele_act.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/ele_act.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/install_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/install_package.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/modul.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/modul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_all_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_case.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,23 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/modul.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/ele_act.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state relative-caret-position="475">
+              <caret line="97" column="27" lean-forward="true" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
               <folding>
-                <element signature="e#51#81#0" expanded="true" />
+                <element signature="e#56#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/act_log.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/install_package.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -96,15 +102,15 @@
         <option value="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/stu_WX_sj.py" />
         <option value="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/ad_WX_sjgl.py" />
         <option value="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/ad_WX_xjsj.py" />
-        <option value="$PROJECT_DIR$/run_all_case.py" />
-        <option value="$PROJECT_DIR$/common/install_package.py" />
-        <option value="$PROJECT_DIR$/common/modul.py" />
         <option value="$PROJECT_DIR$/Test_case/Test_UI/Test_zcWX/test_zc_WX.py" />
-        <option value="$PROJECT_DIR$/common/ele_act.py" />
         <option value="$PROJECT_DIR$/WX_Log/act_log.py" />
         <option value="$PROJECT_DIR$/common/create_decorator.py" />
         <option value="$PROJECT_DIR$/common/decorators.py" />
         <option value="$PROJECT_DIR$/common/act_log.py" />
+        <option value="$PROJECT_DIR$/run_all_case.py" />
+        <option value="$PROJECT_DIR$/common/modul.py" />
+        <option value="$PROJECT_DIR$/common/install_package.py" />
+        <option value="$PROJECT_DIR$/common/ele_act.py" />
       </list>
     </option>
   </component>
@@ -127,6 +133,16 @@
             <path>
               <item name="School_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="School_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="School_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="School_test" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="School_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="School_test" type="462c0819:PsiDirectoryNode" />
+              <item name="WX_Log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.decorators">
+  <component name="RunManager" selected="Python.run_all_case">
     <configuration name="act_log (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="School_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,7 +267,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stu_WX_sj" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run_all_case" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="School_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,12 +275,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/stu_WX_sj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all_case.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,11 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_all_case" />
         <item itemvalue="Python.decorators" />
         <item itemvalue="Python.act_log (1)" />
         <item itemvalue="Python.act_log" />
         <item itemvalue="Python.install_package" />
-        <item itemvalue="Python.stu_WX_sj" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +328,7 @@
       <workItem from="1559622294831" duration="17060000" />
       <workItem from="1559697354747" duration="23579000" />
       <workItem from="1559784916520" duration="5541000" />
-      <workItem from="1559791044302" duration="773000" />
+      <workItem from="1559791044302" duration="8881000" />
     </task>
     <servers />
   </component>
@@ -349,7 +365,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214470000" />
+    <option name="totallyTimeSpent" value="222578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,6 +378,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="203" y="76" width="1400" height="958" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32462686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -369,7 +386,7 @@
       <window_info id="DB Browser" order="3" weight="0.32910448" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.3078788" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" visible="true" weight="0.30703884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985849" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,7 +425,7 @@
     <SUITE FILE_PATH="coverage/School_test$act_log.coverage" NAME="act_log Coverage Results" MODIFIED="1559733967035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WX_Log" />
     <SUITE FILE_PATH="coverage/School_test$ad_WX_xjsj.coverage" NAME="ad_WX_xjsj Coverage Results" MODIFIED="1559122860649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
     <SUITE FILE_PATH="coverage/School_test$pytest_in_ad_WX_sjgl_py.coverage" NAME="pytest in ad_WX_sjgl.py Coverage Results" MODIFIED="1559722523277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
-    <SUITE FILE_PATH="coverage/School_test$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1559126969558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/School_test$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1559792451267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/School_test$pytest_in_ad_WX_xjsj_py.coverage" NAME="pytest in ad_WX_xjsj.py Coverage Results" MODIFIED="1559122847623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
     <SUITE FILE_PATH="coverage/School_test$test_zc_WX.coverage" NAME="test_zc_WX Coverage Results" MODIFIED="1559206386835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_zcWX" />
     <SUITE FILE_PATH="coverage/School_test$pytest_in_test_WX_sj_ad_py.coverage" NAME="pytest in test_WX_sj_ad.py Coverage Results" MODIFIED="1558940489992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
@@ -424,8 +441,6 @@
     <SUITE FILE_PATH="coverage/School_test$test_WX_sj_ad.coverage" NAME="test_WX_sj_ad Coverage Results" MODIFIED="1559015149576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case/Test_UI/Test_SJ" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/tomorrow/tomorrow.py" />
-    <entry file="file://$PROJECT_DIR$/WJ_package/__init__.py" />
     <entry file="file://$PROJECT_DIR$/test_.py" />
     <entry file="file://$PROJECT_DIR$/screen/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -523,16 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_all_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#43#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/sql_connect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -541,13 +546,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Lib/os.py" />
-    <entry file="file://$PROJECT_DIR$/common/install_package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/stu_WX_sj.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -559,23 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/ad_WX_sjgl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/ele_act.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding>
-            <element signature="e#56#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,19 +584,66 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Lib/functools.py" />
+    <entry file="file://$PROJECT_DIR$/WX_Log/act_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/result.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_all_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#43#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geckodriver.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/install_package.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/modul.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="181">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="e#51#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WX_Log/act_log.py">
+    <entry file="file://$PROJECT_DIR$/common/act_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684" />
+        <state relative-caret-position="190">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_case/Test_UI/Test_SJ/ad_WX_sjgl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#42#72#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/decorators.py">
@@ -628,17 +656,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readMe.txt">
+    <entry file="file://$PROJECT_DIR$/common/ele_act.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/act_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        <state relative-caret-position="475">
+          <caret line="97" column="27" lean-forward="true" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+          <folding>
+            <element signature="e#56#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

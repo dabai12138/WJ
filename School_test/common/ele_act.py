@@ -77,23 +77,28 @@ class Page(object):
             self.driver.refresh()
         except Exception as e:
             raise e
-    def talert(self):
+    def EC_alert(self,s):
+        #判断是否有alert
         alert = EC.alert_is_present()(self.driver)
-        if alert:
+        if alert and s == 1:
             alert.accept()
-        else:
-            pass
-    def falert(self):
-        alert = EC.alert_is_present()(self.driver)
-        if alert:
+        elif alert and s == 2:
             alert.dismiss()
-        else:
-            pass
-    def alert(self):
+    def alert(self,s=1,txt=None):
         try:
-            self.driver.switch_to_alert()
+            alert= self.driver.switch_to_alert()
+            if s == 1:
+                alert.accept()
+            elif s == 2:
+                alert.dismiss()
+            elif s == 3:
+                alert.send_keys(txt)
+            elif s == 4:
+                text = alert.text
+                return text
         except Exception as e:
             raise e
+
     def active_ele(self):
         #定位到当前聚焦的元素
         try:
@@ -101,6 +106,7 @@ class Page(object):
         except Exception as e:
             raise e
     def handle_(self):
+        #跳转到新页面
         handle = self.driver.current_window_handle
         handles = self.driver.window_handles
         for h in handles:
@@ -113,6 +119,7 @@ class Page(object):
         except Exception as e:
             raise e
     def par_frame(self):
+        #跳回父frame
         try:
             self.driver.switch_to.parent_frame()
         except Exception as e:
@@ -124,10 +131,13 @@ class Page(object):
         except Exception as e:
             raise e
     def wait(self):
+        #隐式等待
         self.driver.implicitly_wait(30)
     def url(self):
+        #获取当前url
         return self.driver.current_url()
     def AC(self,ele,addr,ele_=None,addr_=None,s=0):
+        #鼠标各种操作
         ac = ActionChains(self.driver)
         m = self.__ele(ele, addr)
         if s == 0:
@@ -155,16 +165,29 @@ class Page(object):
         #把元素拉到可见位置
         try:
             target = self.__ele(ele,addr)
-            self.driver.execute_script("arguments[0].scrolllntoView();",target)
+            self.e_js("arguments[0].scrolllntoView();",target)
         except Exception as e:
             raise e
 
     def scroll_down(self):
         #滚动条拉到最下方
         try:
-            self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
+            self.e_js("window.scrollTo(0,document.body.scrollHeight);")
         except Exception as e:
             raise e
+    def e_js(self,js,*args):
+        #执行js代码
+        try:
+            self.driver.execute_script(js,args)
+        except Exception as e:
+            raise e
+    def up_file(self,ele,addr):
+        #上传文件
+        pass
+
+    def down_file(self):
+        #下载文件
+        pass
 
 if __name__ == "__main__":
     p = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

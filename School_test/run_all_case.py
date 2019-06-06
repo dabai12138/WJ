@@ -23,7 +23,7 @@ discover = []
 rule = ["ad*.py","stu*.py","test*.py"]
 
 def add_case(rule,caseName="Test_case\Test_UI"):
-    """用例添加"""
+    #用例添加
     case_path = os.path.join(curr_path,caseName)
     if not os.path.exists(case_path):os.mkdir(case_path)
     discover = unittest.defaultTestLoader.discover(start_dir=case_path,
@@ -32,7 +32,7 @@ def add_case(rule,caseName="Test_case\Test_UI"):
     return discover
 
 def run_case(suite,reportName="report"):
-    """执行用例，生成报告"""
+    #执行用例，生成报告
     report_path = os.path.join(curr_path,reportName)
     if not os.path.exists(report_path):os.mkdir(report_path)
     result_path = os.path.join(report_path,"result.html")
@@ -45,6 +45,7 @@ def run_case(suite,reportName="report"):
                                 description=u"用例执行情况：")
         m = Thread(target=runner.run,args=(i,))
         mu.append(m)
+    #有几个匹配文件则执行几个线程
     for i in mu:
         i.start()
     for i in mu:
@@ -59,7 +60,7 @@ def get_new_report_file(report_path):
     return report_file
 
 def send_mail(sender,psw,receiver,smtpserver,report_file,port):
-    """发送邮件"""
+    #发送邮件
     with open(report_file,"rb") as f:
         mail_body = f.read()
     msg = MIMEMultipart()

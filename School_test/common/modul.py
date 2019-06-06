@@ -53,9 +53,8 @@ def act_sql(sql):
     s.sql_close()
     return data
 
-def act_log():
-    #打印日志方法
-    pass
+
+
 
 
 
