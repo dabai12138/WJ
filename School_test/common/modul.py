@@ -9,7 +9,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from WX_data import page_ele as PE
 from common import config,ele_act,sql_connect
-import os
+import os,time
+import win32api
+import win32con
+import win32gui
 
 
 def login(self):
@@ -52,6 +55,20 @@ def act_sql(sql):
     data = s.sql_search()
     s.sql_close()
     return data
+
+def pywin(pHandle,winClass,index=0):
+    assert type(index) == int and index >=0
+    handle = win32gui.FindWindowEx(pHandle,0,winClass,None)
+    while index >0:
+        handle = win32gui.FindWindowEx(pHandle,handle,winClass,None)
+        index -= 1
+    return handle
+
+
+
+if __name__ == "__main__":
+    pass
+
 
 
 
