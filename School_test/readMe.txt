@@ -9,7 +9,7 @@
 启用node：打开cmd-到 selenium-server-standalone-3.141.59.jar 目录下，输入命令：java -jar selenium-server-standalone-3.141.59.jar -role node -port 5555 -hub http://localhost:4444/gird/register                                        
 PS:node可建立多个，port要不同
 
-python：
+配置python3环境：
 python 功能包导入  pip install package
 用例文件ad开头的为admin端用例；stu开头的为学生端用例，th开头的为教师端用例
 common：存放自定义的方法函数
