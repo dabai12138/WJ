@@ -83,8 +83,12 @@ class Page(object):
         # elif s == 10:#获取css属性的值
         #     return self.__ele(ele,addr).value_of_css_property()
 
+
+
+
     @log_exception
     def select(self,ele,addr,s,flag=True):
+        #select下拉框选择
         if isinstance(s,int):
             if flag:
                 Select(self.__ele(ele,addr)).select_by_index(s)
@@ -96,10 +100,13 @@ class Page(object):
     @log_exception
     @property
     def max_(self):
+        #窗口最大化
         self.driver.maximize_window()
+
     @log_exception
     @property
     def refresh(self):
+        #刷新页面
         self.driver.refresh()
 
     @log_exception
@@ -113,6 +120,7 @@ class Page(object):
 
     @log_exception
     def alert(self,s=1,txt=None):
+        #各种警告框的操作
         alert= self.driver.switch_to_alert()
         if s == 1:
             alert.accept()
@@ -226,12 +234,10 @@ class Page(object):
 
     @log_exception
     def  pywin(self):
-        win32api.GetCursorPos()
+        pass
 
 
-driver = webdriver.Chrome()
-driver.page_source()
-driver.name()
+
 if __name__ == "__main__":
     p = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     p = os.path.join(p,"screen")

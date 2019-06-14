@@ -12,7 +12,8 @@ def log_exception(func):
     def wrapper(*args,**kwargs):
         log = act_log.Log()
         try:
-            func(*args,**kwargs)
+            res = func(*args,**kwargs)
+            return res
         except Exception as e:
             log.exception("[Error in {}] msg: {}".format(__name__,str(e)))
             raise

@@ -5,7 +5,7 @@
 
 import logging,time,os
 import functools
-now = time.strftime("%Y-%m-%d")
+now = time.strftime("%Y-%m-%d")+"错误日志"
 log_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 logpath = os.path.join(log_dir,"WX_Log")
 
@@ -17,7 +17,7 @@ class Log(object):
         self.logger.setLevel(logging.DEBUG)
         #日志输出格式
         #Logger:日志 LogRecord:日志记录器 Handler:处理器 Filter:过滤器 Formatter:格式化器
-        self.formatter = logging.Formatter('[%(asctime)s] - %(filename)s[line:%(lineno)d] - fuc:%(funcName)s- %(levelname)s: \n%(message)s')
+        self.formatter = logging.Formatter('[%(asctime)s] - %(filename)s[line:%(lineno)d] - fuc:%(funcName)s- %(levelname)s: %(message)s')
 
     def __console(self,level,message):
         #创建一个FileHandler，用于写到本地
